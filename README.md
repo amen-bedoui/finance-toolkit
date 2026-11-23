@@ -56,3 +56,7 @@ Issues et pull requests bienvenues : ajoutez un test (`tests/`) avec chaque chan
 Ne versionnez jamais de données réelles de clients ou d'employeur (balances, FEC) : `data/private/` est ignoré par Git.
 
 Licence MIT.
+
+## Date des données de l'exemple NVIDIA
+
+L'exemple NVIDIA est arrêté au 23/11/2026 : cours de clôture du 20/11/2026 (125,53 $), résultats du troisième trimestre de l'exercice 2027 (communiqué du 17/11/2026), consensus des analystes du 18/11/2026. Les multiples des pairs datent du 28/10 et du 11/11/2026 et viennent d'agrégateurs gratuits ; le classeur borne l'effet de ce décalage dans l'onglet `Pont_Consensus`. La décote juridique de 10 % appliquée à la cible est un jugement de l'auteur, non calibré. Ces chiffres vieillissent vite : mettez-les à jour avant tout usage.

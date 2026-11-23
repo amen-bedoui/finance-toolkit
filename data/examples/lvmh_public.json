@@ -1,0 +1,412 @@
+{
+ "_comment": "LVMH — données publiques (comptes consolidés au 31/12/2025, M€, IFRS). Mapping et retraitements dans docs/VALIDATION_LVMH.md. Hypothèses DCF, LBO et M&A = ILLUSTRATIVES, pas des prévisions. Données de pairs : agrégateurs, à remplacer par Bloomberg/FactSet/CapIQ avant tout usage sérieux.",
+ "info": {
+  "nom": "LVMH Moët Hennessy Louis Vuitton",
+  "secteur": "Luxe",
+  "devise": "EUR",
+  "unite": "M€",
+  "mult": 1000000,
+  "actions": 497686940,
+  "cours": 382.4,
+  "tva": 0.0,
+  "profil": "Générique",
+  "source_cours": "widget cours Idéal Investisseur du 20/11/2026 (382,40 €) ; actions = capital 149 306 082 € / nominal 0,30 € (non retraité des auto-détenues)"
+ },
+ "years": [
+  "2023",
+  "2024",
+  "2025"
+ ],
+ "statements": {
+  "ca": [
+   86153,
+   84683,
+   80807
+  ],
+  "achats": [
+   26876,
+   27918,
+   27279
+  ],
+  "ext": [
+   29305,
+   29426,
+   27847
+  ],
+  "taxes": [
+   0,
+   0,
+   0
+  ],
+  "perso": [
+   0,
+   0,
+   0
+  ],
+  "aprod": [
+   7,
+   28,
+   75
+  ],
+  "acharg": [
+   0,
+   0,
+   0
+  ],
+  "dot": [
+   7177,
+   7796,
+   8001
+  ],
+  "pfin": [
+   0,
+   160,
+   500
+  ],
+  "cfin": [
+   935,
+   952,
+   901
+  ],
+  "pexc": [
+   0,
+   0,
+   0
+  ],
+  "cexc": [
+   242,
+   664,
+   656
+  ],
+  "impot": [
+   5673,
+   5157,
+   5476
+  ],
+  "immo_inc": [
+   49611,
+   46587,
+   41444
+  ],
+  "immo_corp": [
+   43010,
+   46506,
+   44588
+  ],
+  "immo_fin": [
+   7363,
+   8626,
+   7826
+  ],
+  "stocks": [
+   22952,
+   23669,
+   22659
+  ],
+  "clients": [
+   4728,
+   4730,
+   4332
+  ],
+  "autres_cr": [
+   8256,
+   9441,
+   12394
+  ],
+  "treso": [
+   7774,
+   9631,
+   8794
+  ],
+  "capital": [
+   151,
+   150,
+   149
+  ],
+  "reserves": [
+   46598,
+   56179,
+   57578
+  ],
+  "res_bilan": [
+   15952,
+   12958,
+   11222
+  ],
+  "provisions": [
+   10892,
+   11200,
+   10539
+  ],
+  "dlt": [
+   25037,
+   26951,
+   25802
+  ],
+  "dct": [
+   13408,
+   13823,
+   10559
+  ],
+  "fourn": [
+   9049,
+   8630,
+   8223
+  ],
+  "fisc": [
+   1148,
+   1231,
+   828
+  ],
+  "autres_det": [
+   21459,
+   18068,
+   17137
+  ],
+  "lease_lt": [
+   13810,
+   14860,
+   13384
+  ],
+  "lease_ct": [
+   2728,
+   2972,
+   2634
+  ],
+  "loyers": [
+   3211,
+   3425,
+   3527
+  ],
+  "capex": [
+   7478,
+   5531,
+   4567
+  ],
+  "div": [
+   7159,
+   7322,
+   7123
+  ],
+  "acq": [
+   721,
+   438,
+   -149
+  ],
+  "rach": [
+   1420,
+   292,
+   1548
+  ]
+ },
+ "hypotheses": {
+  "rf": 0.047,
+  "erp": 0.055,
+  "beta": 1.05,
+  "beta_mode": 1,
+  "size": 0.0,
+  "kd": 0.035,
+  "tax": 0.3,
+  "wd": 0.1,
+  "g": 0.02,
+  "mult": 11.0,
+  "wg": 0.5,
+  "mid": 1,
+  "minor": 7808,
+  "nonop": 7797,
+  "ifrs": 1,
+  "lease": 0.044,
+  "da": [
+   0.099,
+   0.099,
+   0.099,
+   0.099,
+   0.099
+  ],
+  "capex": [
+   0.058,
+   0.058,
+   0.059,
+   0.059,
+   0.06
+  ],
+  "bfr": [
+   0.163,
+   0.163,
+   0.163,
+   0.163,
+   0.163
+  ],
+  "scenarios": {
+   "bear": {
+    "g": [
+     -0.03,
+     0.0,
+     0.01,
+     0.02,
+     0.02
+    ],
+    "m": [
+     0.295,
+     0.295,
+     0.3,
+     0.3,
+     0.3
+    ]
+   },
+   "base": {
+    "g": [
+     0.01,
+     0.04,
+     0.05,
+     0.045,
+     0.04
+    ],
+    "m": [
+     0.32,
+     0.325,
+     0.33,
+     0.335,
+     0.335
+    ]
+   },
+   "bull": {
+    "g": [
+     0.03,
+     0.06,
+     0.07,
+     0.06,
+     0.05
+    ],
+    "m": [
+     0.325,
+     0.335,
+     0.34,
+     0.345,
+     0.35
+    ]
+   }
+  },
+  "prob": [
+   0.25,
+   0.5,
+   0.25
+  ]
+ },
+ "peers": [
+  {
+   "nom": "Hermès",
+   "ticker": "RMS FP",
+   "date": null,
+   "mcap": 174200,
+   "ev": 175100,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "ev_ebitda": 21.4,
+   "beta": null,
+   "de": null,
+   "tax": 0.25,
+   "source": "alphaspread (cours 1 650 €, date non précisée) ; agrégateur, à vérifier"
+  },
+  {
+   "nom": "Kering",
+   "ticker": "KER FP",
+   "date": null,
+   "mcap": 26000,
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "ev_ebitda": 10.8,
+   "beta": 0.98,
+   "de": null,
+   "tax": 0.25,
+   "source": "VE/EBITDA : alphaspread (date n/d) ; capitalisation et bêta : lightyear (21/09/2026)"
+  },
+  {
+   "nom": "Richemont",
+   "ticker": "CFR SW",
+   "date": null,
+   "mcap": null,
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "ev_ebitda": 20.0,
+   "beta": null,
+   "de": null,
+   "tax": 0.2,
+   "source": "alphaspread (date n/d) ; agrégateur, à vérifier"
+  },
+  {
+   "nom": "Moncler",
+   "ticker": "MONC IM",
+   "date": null,
+   "mcap": null,
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "ev_ebitda": 9.5,
+   "beta": null,
+   "de": null,
+   "tax": 0.25,
+   "source": "extrait de profil LinkedIn (source non primaire, date n/d) : faible fiabilité"
+  },
+  {
+   "nom": "Prada",
+   "ticker": "1913 HK",
+   "date": null,
+   "mcap": null,
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "ev_ebitda": 7.4,
+   "beta": 1.13,
+   "de": null,
+   "tax": 0.25,
+   "source": "multiple : extrait de profil LinkedIn (non primaire) ; bêta : Yahoo (titre OTC), date n/d"
+  }
+ ],
+ "lbo": {
+  "entry_mult": 13.0,
+  "fees": 0.01,
+  "lev": 2.0,
+  "rate": 0.05,
+  "sweep": 1.0,
+  "exit_mult": 13.0,
+  "irr_targets": [
+   0.2,
+   0.15,
+   0.1
+  ]
+ },
+ "ma": {
+  "acq_nom": "Acquéreur fictif (illustratif)",
+  "acq_rn": 30000.0,
+  "acq_actions": 3000000000,
+  "acq_cours": 60.0,
+  "premium": 0.25,
+  "pct_cash": 0.2,
+  "pct_debt": 0.2,
+  "pct_stock": 0.6,
+  "r_debt": 0.045,
+  "r_cash": 0.03,
+  "fees": 0.005,
+  "syn": 500.0,
+  "phase": [
+   0.5,
+   1.0,
+   1.0
+  ],
+  "ppa_pct": 0.2,
+  "ppa_years": 10
+ }
+}

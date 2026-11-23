@@ -1,0 +1,411 @@
+{
+ "_comment": "Société FICTIVE : données inventées, uniquement pour démonstration et tests.",
+ "info": {
+  "nom": "Société Exemple SA",
+  "secteur": "Services aux entreprises",
+  "devise": "EUR",
+  "unite": "k€",
+  "mult": 1000,
+  "actions": 1000000,
+  "cours": 15.0,
+  "tva": 0.2,
+  "profil": "Générique"
+ },
+ "years": [
+  "2023",
+  "2024",
+  "2025"
+ ],
+ "statements": {
+  "ca": [
+   12000,
+   13400,
+   15100
+  ],
+  "achats": [
+   6600,
+   7300,
+   8150
+  ],
+  "ext": [
+   1800,
+   1950,
+   2150
+  ],
+  "taxes": [
+   250,
+   270,
+   300
+  ],
+  "perso": [
+   2100,
+   2300,
+   2550
+  ],
+  "aprod": [
+   60,
+   70,
+   80
+  ],
+  "acharg": [
+   40,
+   45,
+   50
+  ],
+  "dot": [
+   420,
+   470,
+   540
+  ],
+  "pfin": [
+   25,
+   30,
+   35
+  ],
+  "cfin": [
+   140,
+   135,
+   150
+  ],
+  "pexc": [
+   20,
+   0,
+   40
+  ],
+  "cexc": [
+   0,
+   30,
+   10
+  ],
+  "impot": [
+   189,
+   250,
+   339
+  ],
+  "immo_inc": [
+   300,
+   320,
+   350
+  ],
+  "immo_corp": [
+   2800,
+   3050,
+   3500
+  ],
+  "immo_fin": [
+   150,
+   150,
+   180
+  ],
+  "stocks": [
+   1100,
+   1200,
+   1350
+  ],
+  "clients": [
+   2000,
+   2250,
+   2600
+  ],
+  "autres_cr": [
+   350,
+   380,
+   420
+  ],
+  "treso": [
+   900,
+   1050,
+   1306
+  ],
+  "capital": [
+   1500,
+   1500,
+   1500
+  ],
+  "reserves": [
+   564,
+   980,
+   1430
+  ],
+  "res_bilan": [
+   566,
+   750,
+   1016
+  ],
+  "provisions": [
+   120,
+   130,
+   150
+  ],
+  "dlt": [
+   2200,
+   2100,
+   2300
+  ],
+  "dct": [
+   300,
+   350,
+   400
+  ],
+  "fourn": [
+   1500,
+   1650,
+   1850
+  ],
+  "fisc": [
+   700,
+   780,
+   870
+  ],
+  "autres_det": [
+   150,
+   160,
+   190
+  ],
+  "lease_lt": [
+   0,
+   0,
+   0
+  ],
+  "lease_ct": [
+   0,
+   0,
+   0
+  ],
+  "loyers": [
+   0,
+   0,
+   0
+  ],
+  "capex": [
+   700,
+   740,
+   1050
+  ],
+  "div": [
+   120,
+   150,
+   300
+  ],
+  "acq": [
+   0,
+   0,
+   0
+  ],
+  "rach": [
+   0,
+   0,
+   0
+  ]
+ },
+ "hypotheses": {
+  "rf": 0.032,
+  "erp": 0.055,
+  "beta": 1.1,
+  "beta_mode": 2,
+  "size": 0.01,
+  "kd": 0.055,
+  "tax": 0.25,
+  "wd": 0.25,
+  "g": 0.02,
+  "mult": 7.0,
+  "wg": 0.5,
+  "mid": 0,
+  "minor": 0,
+  "nonop": 0,
+  "ifrs": 0,
+  "lease": 0.0,
+  "da": [
+   0.036,
+   0.036,
+   0.036,
+   0.036,
+   0.036
+  ],
+  "capex": [
+   0.06,
+   0.055,
+   0.05,
+   0.045,
+   0.04
+  ],
+  "bfr": [
+   0.097,
+   0.097,
+   0.097,
+   0.097,
+   0.097
+  ],
+  "scenarios": {
+   "bear": {
+    "g": [
+     0.06,
+     0.05,
+     0.04,
+     0.03,
+     0.03
+    ],
+    "m": [
+     0.12,
+     0.12,
+     0.12,
+     0.12,
+     0.12
+    ]
+   },
+   "base": {
+    "g": [
+     0.12,
+     0.1,
+     0.08,
+     0.06,
+     0.05
+    ],
+    "m": [
+     0.135,
+     0.138,
+     0.14,
+     0.14,
+     0.14
+    ]
+   },
+   "bull": {
+    "g": [
+     0.15,
+     0.13,
+     0.11,
+     0.09,
+     0.07
+    ],
+    "m": [
+     0.14,
+     0.145,
+     0.15,
+     0.155,
+     0.16
+    ]
+   }
+  },
+  "prob": [
+   0.25,
+   0.5,
+   0.25
+  ]
+ },
+ "peers": [
+  {
+   "nom": "Pair fictif A",
+   "ticker": "AAA",
+   "date": "2025-12-31",
+   "mcap": 18000,
+   "ev": 20500,
+   "ca": 30000,
+   "ebitda": 2900,
+   "ebit": 2300,
+   "rn": 1400,
+   "ev_ebitda": null,
+   "beta": 1.05,
+   "de": 0.18,
+   "tax": 0.25,
+   "source": "Fictif"
+  },
+  {
+   "nom": "Pair fictif B",
+   "ticker": "BBB",
+   "date": "2025-12-31",
+   "mcap": 9000,
+   "ev": 10800,
+   "ca": 16000,
+   "ebitda": 1500,
+   "ebit": 1150,
+   "rn": 700,
+   "ev_ebitda": null,
+   "beta": 0.95,
+   "de": 0.25,
+   "tax": 0.25,
+   "source": "Fictif"
+  },
+  {
+   "nom": "Pair fictif C",
+   "ticker": "CCC",
+   "date": "2025-12-31",
+   "mcap": 5200,
+   "ev": 5600,
+   "ca": 9800,
+   "ebitda": 820,
+   "ebit": 640,
+   "rn": 410,
+   "ev_ebitda": null,
+   "beta": 1.2,
+   "de": 0.08,
+   "tax": 0.25,
+   "source": "Fictif"
+  },
+  {
+   "nom": "Pair fictif D",
+   "ticker": "DDD",
+   "date": "2025-12-31",
+   "mcap": 3100,
+   "ev": 3500,
+   "ca": 6400,
+   "ebitda": 560,
+   "ebit": 430,
+   "rn": 260,
+   "ev_ebitda": null,
+   "beta": 1.1,
+   "de": 0.13,
+   "tax": 0.25,
+   "source": "Fictif"
+  },
+  {
+   "nom": "Pair fictif E",
+   "ticker": "EEE",
+   "date": "2025-12-31",
+   "mcap": 2200,
+   "ev": 2350,
+   "ca": 4100,
+   "ebitda": 330,
+   "ebit": 250,
+   "rn": 150,
+   "ev_ebitda": null,
+   "beta": 0.9,
+   "de": 0.07,
+   "tax": 0.25,
+   "source": "Fictif"
+  }
+ ],
+ "lbo": {
+  "entry_mult": 8.0,
+  "fees": 0.025,
+  "lev": 3.0,
+  "rate": 0.065,
+  "sweep": 1.0,
+  "exit_mult": 8.0,
+  "irr_targets": [
+   0.25,
+   0.2,
+   0.15
+  ]
+ },
+ "ma": {
+  "acq_nom": "Acquéreur fictif",
+  "acq_rn": 4000,
+  "acq_actions": 2000000,
+  "acq_cours": 30.0,
+  "premium": 0.3,
+  "pct_cash": 0.3,
+  "pct_debt": 0.4,
+  "pct_stock": 0.3,
+  "r_debt": 0.055,
+  "r_cash": 0.025,
+  "fees": 0.02,
+  "syn": 300,
+  "phase": [
+   0.5,
+   1.0,
+   1.0
+  ],
+  "ppa_pct": 0.2,
+  "ppa_years": 8
+ }
+}

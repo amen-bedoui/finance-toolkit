@@ -1,0 +1,396 @@
+{
+ "_comment": "Wavestone SA — données publiques (communiqués de résultats 2024/25 et 2025/26, M€, IFRS consolidés). Retraitements décrits dans docs/VALIDATION.md. Hypothèses DCF = illustratives, pas des prévisions.",
+ "info": {
+  "nom": "Wavestone SA",
+  "secteur": "Conseil en management et technologie",
+  "devise": "EUR",
+  "unite": "M€",
+  "mult": 1000000,
+  "actions": 24906332,
+  "cours": 34.2,
+  "tva": 0.2,
+  "profil": "Services",
+  "source_cours": "abcbourse, cours du 05/11/2026 ; nombre d'actions : rapport 2024/25 (24 906 332, dont 461 511 auto-détenues)"
+ },
+ "years": [
+  "2023/24",
+  "2024/25",
+  "2025/26"
+ ],
+ "statements": {
+  "ca": [
+   701.056,
+   943.666,
+   954.347
+  ],
+  "achats": [
+   67.798,
+   144.953,
+   133.926
+  ],
+  "ext": [
+   52.045,
+   66.39,
+   59.224
+  ],
+  "taxes": [
+   7.839,
+   8.198,
+   8.596
+  ],
+  "perso": [
+   465.469,
+   595.367,
+   621.208
+  ],
+  "aprod": [
+   1.542,
+   1.224,
+   1.365
+  ],
+  "acharg": [
+   0,
+   0,
+   0
+  ],
+  "dot": [
+   11.914,
+   19.296,
+   20.123
+  ],
+  "pfin": [
+   0.759,
+   0.701,
+   1.049
+  ],
+  "cfin": [
+   5.278,
+   7.047,
+   3.177
+  ],
+  "pexc": [
+   0,
+   0,
+   0
+  ],
+  "cexc": [
+   11.75,
+   1.122,
+   1.159
+  ],
+  "impot": [
+   22.673,
+   27.296,
+   27.248
+  ],
+  "immo_inc": [
+   582.454,
+   578.694,
+   578.328
+  ],
+  "immo_corp": [
+   35.852,
+   36.866,
+   28.721
+  ],
+  "immo_fin": [
+   15.398,
+   13.906,
+   14.018
+  ],
+  "stocks": [
+   0,
+   0,
+   0
+  ],
+  "clients": [
+   245.9,
+   250.176,
+   234.108
+  ],
+  "autres_cr": [
+   20.656,
+   21.96,
+   20.279
+  ],
+  "treso": [
+   77.481,
+   78.346,
+   121.44
+  ],
+  "capital": [
+   266.055,
+   266.055,
+   266.055
+  ],
+  "reserves": [
+   246.746,
+   291.425,
+   354.31
+  ],
+  "res_bilan": [
+   58.591,
+   75.921,
+   82.1
+  ],
+  "provisions": [
+   29.862,
+   26.751,
+   28.732
+  ],
+  "dlt": [
+   70.244,
+   64.103,
+   10.801
+  ],
+  "dct": [
+   14.151,
+   16.669,
+   9.464
+  ],
+  "fourn": [
+   42.293,
+   34.15,
+   32.106
+  ],
+  "fisc": [
+   152.575,
+   145.915,
+   156.475
+  ],
+  "autres_det": [
+   97.224,
+   58.958,
+   56.851
+  ],
+  "lease_lt": [
+   18.013,
+   19.173,
+   10.801
+  ],
+  "lease_ct": [
+   8.174,
+   8.839,
+   9.445
+  ],
+  "loyers": [
+   6.624,
+   9.149,
+   10.737
+  ],
+  "capex": [
+   3.109,
+   4.838,
+   2.311
+  ],
+  "div": [
+   7.593,
+   10.225,
+   11.68
+  ],
+  "acq": [
+   65.99,
+   44.005,
+   10.558
+  ],
+  "rach": [
+   5.914,
+   12.155,
+   0.002
+  ]
+ },
+ "hypotheses": {
+  "rf": 0.047,
+  "erp": 0.055,
+  "beta": 1.0,
+  "beta_mode": 2,
+  "size": 0.015,
+  "kd": 0.045,
+  "tax": 0.25,
+  "wd": 0.05,
+  "g": 0.02,
+  "mult": 7.0,
+  "wg": 0.5,
+  "mid": 1,
+  "minor": 1.158,
+  "nonop": 0,
+  "ifrs": 1,
+  "lease": 0.011,
+  "da": [
+   0.016,
+   0.016,
+   0.016,
+   0.016,
+   0.016
+  ],
+  "capex": [
+   0.003,
+   0.003,
+   0.003,
+   0.003,
+   0.003
+  ],
+  "bfr": [
+   0.055,
+   0.055,
+   0.055,
+   0.055,
+   0.055
+  ],
+  "scenarios": {
+   "bear": {
+    "g": [
+     -0.02,
+     0.0,
+     0.01,
+     0.01,
+     0.01
+    ],
+    "m": [
+     0.115,
+     0.115,
+     0.12,
+     0.12,
+     0.12
+    ]
+   },
+   "base": {
+    "g": [
+     0.01,
+     0.02,
+     0.03,
+     0.03,
+     0.03
+    ],
+    "m": [
+     0.13,
+     0.134,
+     0.138,
+     0.14,
+     0.14
+    ]
+   },
+   "bull": {
+    "g": [
+     0.04,
+     0.05,
+     0.05,
+     0.05,
+     0.04
+    ],
+    "m": [
+     0.14,
+     0.145,
+     0.15,
+     0.155,
+     0.155
+    ]
+   }
+  },
+  "prob": [
+   0.25,
+   0.5,
+   0.25
+  ]
+ },
+ "peers": [
+  {
+   "nom": "Capgemini",
+   "ticker": "CAP FP",
+   "date": "2026-08-01",
+   "mcap": 21410,
+   "ev": 24700,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "ev_ebitda": 7.19,
+   "beta": 0.95,
+   "de": null,
+   "tax": 0.25,
+   "source": "twelvedata (statistiques), bêta 5 ans ; agrégateur : à vérifier"
+  },
+  {
+   "nom": "Sopra Steria",
+   "ticker": "SOP FP",
+   "date": "2026-02-01",
+   "mcap": 2300,
+   "ev": 3510,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "ev_ebitda": 5.15,
+   "beta": 0.94,
+   "de": null,
+   "tax": 0.25,
+   "source": "stockanalysis (statistiques) ; date approximative"
+  },
+  {
+   "nom": "Alten",
+   "ticker": "ATE FP",
+   "date": "2025-12-12",
+   "mcap": 2530,
+   "ev": 2560,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "ev_ebitda": 7.36,
+   "beta": 1.34,
+   "de": null,
+   "tax": 0.25,
+   "source": "twelvedata (VE/EBITDA), stockanalysis (bêta) ; dates différentes"
+  },
+  {
+   "nom": "Aubay",
+   "ticker": "AUB FP",
+   "date": "2025-12-15",
+   "mcap": 711,
+   "ev": 609,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "ev_ebitda": null,
+   "beta": 0.82,
+   "de": 0.0,
+   "tax": 0.25,
+   "source": "twelvedata, tipranks (bêta) ; multiple publié (13x) jugé non fiable, exclu"
+  }
+ ],
+ "lbo": {
+  "entry_mult": 7.5,
+  "fees": 0.025,
+  "lev": 2.5,
+  "rate": 0.07,
+  "sweep": 1.0,
+  "exit_mult": 7.0,
+  "irr_targets": [
+   0.25,
+   0.2,
+   0.15
+  ]
+ },
+ "ma": {
+  "acq_nom": "Acquéreur fictif (illustratif)",
+  "acq_rn": 150.0,
+  "acq_actions": 100000000,
+  "acq_cours": 21.0,
+  "premium": 0.3,
+  "pct_cash": 0.4,
+  "pct_debt": 0.3,
+  "pct_stock": 0.3,
+  "r_debt": 0.055,
+  "r_cash": 0.025,
+  "fees": 0.02,
+  "syn": 12.0,
+  "phase": [
+   0.5,
+   1.0,
+   1.0
+  ],
+  "ppa_pct": 0.2,
+  "ppa_years": 8
+ }
+}

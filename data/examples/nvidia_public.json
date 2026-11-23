@@ -1,0 +1,723 @@
+{
+ "_comment": "NVIDIA Corporation — données publiques (10-K FY2026, T3 FY27 du 17/11/2026), US GAAP, M$. Exercice clos fin janvier ; bilan intermédiaire du 25/10/2026 (stub 0,75). Hypothèses DCF, LBO et M&A = vues de l'auteur, sourcées quand c'est possible. Données de pairs et de cours : agrégateurs, à remplacer par Bloomberg/FactSet/CapIQ avant tout usage sérieux.",
+ "info": {
+  "nom": "NVIDIA Corporation",
+  "secteur": "Semi-conducteurs (IA / calcul accéléré)",
+  "devise": "USD",
+  "unite": "M$",
+  "mult": 1000000,
+  "actions": 24186000000,
+  "cours": 125.53,
+  "tva": 0.0,
+  "profil": "Générique",
+  "source_cours": "Clôture Nasdaq du 20/11/2026 (125,53 $, −14,0 %), page cotation NVIDIA Investor Relations et Yahoo Finance ; actions diluées T3 FY27 : 24 186 M (8-K du 17/11/2026)"
+ },
+ "years": [
+  "FY2024",
+  "FY2025",
+  "FY2026"
+ ],
+ "statements": {
+  "ca": [
+   60922,
+   130497,
+   215938
+  ],
+  "achats": [
+   16621,
+   32639,
+   62475
+  ],
+  "ext": [
+   9821,
+   14541,
+   20233
+  ],
+  "taxes": [
+   0,
+   0,
+   0
+  ],
+  "perso": [
+   0,
+   0,
+   0
+  ],
+  "aprod": [
+   0,
+   0,
+   0
+  ],
+  "acharg": [
+   0,
+   0,
+   0
+  ],
+  "dot": [
+   1508,
+   1864,
+   2843
+  ],
+  "pfin": [
+   1103,
+   2820,
+   11322
+  ],
+  "cfin": [
+   257,
+   247,
+   259
+  ],
+  "pexc": [
+   0,
+   0,
+   0
+  ],
+  "cexc": [
+   0,
+   0,
+   0
+  ],
+  "impot": [
+   4058,
+   11146,
+   21383
+  ],
+  "immo_inc": [
+   5542,
+   5995,
+   24138
+  ],
+  "immo_corp": [
+   5260,
+   8076,
+   13250
+  ],
+  "immo_fin": [
+   10581,
+   17404,
+   43810
+  ],
+  "stocks": [
+   5282,
+   10080,
+   21403
+  ],
+  "clients": [
+   9999,
+   23065,
+   38466
+  ],
+  "autres_cr": [
+   3080,
+   3771,
+   3180
+  ],
+  "treso": [
+   25984,
+   43210,
+   62556
+  ],
+  "capital": [
+   0,
+   0,
+   0
+  ],
+  "reserves": [
+   13218,
+   6447,
+   37226
+  ],
+  "res_bilan": [
+   29760,
+   72880,
+   120067
+  ],
+  "provisions": [
+   2541,
+   4245,
+   7306
+  ],
+  "dlt": [
+   9578,
+   9982,
+   10041
+  ],
+  "dct": [
+   1250,
+   0,
+   999
+  ],
+  "fourn": [
+   2699,
+   6310,
+   9812
+  ],
+  "fisc": [
+   0,
+   0,
+   0
+  ],
+  "autres_det": [
+   6682,
+   11737,
+   21352
+  ],
+  "lease_lt": [
+   1119,
+   1519,
+   2572
+  ],
+  "lease_ct": [
+   0,
+   0,
+   0
+  ],
+  "loyers": [
+   0,
+   0,
+   0
+  ],
+  "capex": [
+   1069,
+   3236,
+   6042
+  ],
+  "div": [
+   395,
+   834,
+   974
+  ],
+  "acq": [
+   83,
+   1007,
+   1535
+  ],
+  "rach": [
+   9533,
+   33706,
+   40086
+  ],
+  "sbc": [
+   3549,
+   4737,
+   6386
+  ],
+  "autres_inv": [
+   0,
+   1293,
+   30418
+  ],
+  "autres_dec": [
+   2783,
+   6569,
+   7414
+  ],
+  "noncash": [
+   0,
+   1030,
+   8918
+  ]
+ },
+ "hypotheses": {
+  "rf": 0.0507,
+  "erp": 0.0414,
+  "beta": 1.5,
+  "beta_mode": 1,
+  "size": 0.0,
+  "kd": 0.05,
+  "tax": 0.17,
+  "wd": 0.01,
+  "g": 0.03,
+  "mult": 16.0,
+  "wg": 0.5,
+  "mid": 1,
+  "minor": 0,
+  "nonop": 76800,
+  "ifrs": 1,
+  "lease": 0.0,
+  "da": [
+   0.013,
+   0.013,
+   0.013,
+   0.013,
+   0.013
+  ],
+  "capex": [
+   0.03,
+   0.03,
+   0.03,
+   0.03,
+   0.03
+  ],
+  "bfr": [
+   0.148,
+   0.148,
+   0.148,
+   0.148,
+   0.148
+  ],
+  "scenarios": {
+   "bear": {
+    "g": [
+     0.75,
+     0.35,
+     0.0,
+     -0.1,
+     0.0
+    ],
+    "m": [
+     0.64,
+     0.58,
+     0.5,
+     0.45,
+     0.45
+    ]
+   },
+   "base": {
+    "g": [
+     0.9,
+     0.7,
+     0.25,
+     0.12,
+     0.07
+    ],
+    "m": [
+     0.67,
+     0.66,
+     0.64,
+     0.61,
+     0.58
+    ]
+   },
+   "bull": {
+    "g": [
+     0.95,
+     0.8,
+     0.4,
+     0.2,
+     0.12
+    ],
+    "m": [
+     0.68,
+     0.68,
+     0.67,
+     0.65,
+     0.63
+    ]
+   }
+  },
+  "prob": [
+   0.25,
+   0.5,
+   0.25
+  ],
+  "fade": {
+   "marge_lt": 0.5,
+   "mult_lt": 14
+  },
+  "stub": 0.75
+ },
+ "peers": [
+  {
+   "nom": "Broadcom",
+   "ticker": "AVGO",
+   "date": "2026-10-28",
+   "mcap": 1695307,
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": 38265,
+   "ev_ebitda": 23.2,
+   "beta": null,
+   "de": null,
+   "tax": 0.21,
+   "source": "VE/EBITDA : multiples.vc (28/10/2026) ; capitalisation et résultat net LTM : valueresearchonline (date n/d)"
+  },
+  {
+   "nom": "Micron",
+   "ticker": "MU",
+   "date": null,
+   "mcap": 1213973,
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": 84969,
+   "ev_ebitda": null,
+   "beta": null,
+   "de": null,
+   "tax": 0.21,
+   "source": "valueresearchonline (capitalisation et résultat net LTM, date n/d) ; titre cyclique : PER bas"
+  },
+  {
+   "nom": "Analog Devices",
+   "ticker": "ADI",
+   "date": null,
+   "mcap": 202136,
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": 4135,
+   "ev_ebitda": null,
+   "beta": null,
+   "de": null,
+   "tax": 0.21,
+   "source": "valueresearchonline (date n/d)"
+  },
+  {
+   "nom": "Marvell",
+   "ticker": "MRVL",
+   "date": "2026-11-11",
+   "mcap": 244708,
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": 2639.9,
+   "ev_ebitda": 52.49,
+   "beta": null,
+   "de": null,
+   "tax": 0.21,
+   "source": "VE/EBITDA : Finviz, clôture du 11/11/2026 (relayé par investinglive) ; capitalisation et résultat net LTM : valueresearchonline (date n/d)",
+   "exclu": true
+  },
+  {
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "mcap": null,
+   "beta": null,
+   "de": null,
+   "tax": 0.21,
+   "nom": "AMD",
+   "ticker": "AMD",
+   "date": "2026-11-11",
+   "ev_ebitda": 81.1,
+   "source": "VE/EBITDA : Finviz, clôture du 11/11/2026 (relayé par investinglive) ; valeur élevée tirée par la croissance attendue, valeur extrême du panel"
+  },
+  {
+   "ev": null,
+   "ca": null,
+   "ebitda": null,
+   "ebit": null,
+   "rn": null,
+   "mcap": null,
+   "beta": null,
+   "de": null,
+   "tax": 0.21,
+   "nom": "TSMC",
+   "ticker": "TSM",
+   "date": "2026-11-11",
+   "ev_ebitda": 17.98,
+   "source": "VE/EBITDA : Finviz, clôture du 11/11/2026 (relayé par investinglive) ; fondeur, pair partiel (modèle d'activité différent)"
+  }
+ ],
+ "lbo": {
+  "entry_mult": 16.0,
+  "fees": 0.005,
+  "lev": 1.0,
+  "rate": 0.07,
+  "sweep": 1.0,
+  "exit_mult": 16.0,
+  "irr_targets": [
+   0.2,
+   0.15,
+   0.1
+  ]
+ },
+ "ma": {
+  "acq_nom": "Acquéreur fictif (illustratif)",
+  "acq_rn": 300000.0,
+  "acq_actions": 60000000000,
+  "acq_cours": 100.0,
+  "premium": 0.25,
+  "pct_cash": 0.2,
+  "pct_debt": 0.2,
+  "pct_stock": 0.6,
+  "r_debt": 0.05,
+  "r_cash": 0.04,
+  "fees": 0.003,
+  "syn": 5000.0,
+  "phase": [
+   0.5,
+   1.0,
+   1.0
+  ],
+  "ppa_pct": 0.2,
+  "ppa_years": 10
+ },
+ "sources": {
+  "rf": {
+   "source": "Rendement du Trésor américain à 10 ans, clôture du 18/11/2026 (5,07 %), via Gotrade/Yahoo",
+   "date": "2026-11-18",
+   "conf": "Moyenne",
+   "note": "Agrégateur grand public ; à remplacer par la série FRED/Trésor."
+  },
+  "erp": {
+   "source": "Damodaran (NYU Stern), prime de risque implicite des actions américaines : 4,14 %",
+   "date": "2026-09-01",
+   "conf": "Moyenne",
+   "note": "Prime implicite mensuelle ; plus basse que les 5 % à 5,5 % des praticiens. À comparer à Kroll."
+  },
+  "beta": {
+   "source": "Damodaran, bêtas sectoriels États-Unis, janvier 2026 : semi-conducteurs 1,49 (désendetté corrigé de la trésorerie 1,46)",
+   "date": "2026-01-01",
+   "conf": "Moyenne",
+   "note": "Bêta sectoriel (63 sociétés) ; 1,5 retenu, cohérent avec le secteur. Le bêta brut de Nvidia est plus élevé (≈ 2)."
+  },
+  "kd": {
+   "source": "Jugement de l'auteur",
+   "conf": "Basse",
+   "note": "Coût de la dette illustratif ; la dette pèse environ 1 % de la structure cible."
+  },
+  "tax": {
+   "source": "Communiqué T3 FY27 (8-K du 17/11/2026) : taux effectif sur 9 mois d'environ 16,8 %",
+   "date": "2026-11-17",
+   "conf": "Haute",
+   "note": "17 % retenu ; la réglementation fiscale peut évoluer."
+  },
+  "g": {
+   "source": "Jugement de l'auteur",
+   "conf": "Basse",
+   "note": "Croissance nominale de long terme, à comparer à la croissance du PIB nominal."
+  },
+  "mult": {
+   "source": "Jugement de l'auteur",
+   "conf": "Basse",
+   "note": "16x ; à comparer au multiple VE/EBITDA des pairs matures (voir panel)."
+  },
+  "g1": {
+   "source": "Consensus LSEG relayé par CNBC : +90 % en FY27 ; guidance T4 d'environ 130 Md$ (+90 %)",
+   "date": "2026-11-17",
+   "conf": "Moyenne",
+   "note": "90 % en année 1 (consensus et guidance) ; année 2 : 70 % (consensus LSEG, ventes > 690 Md$) ; années 3 à 5 : 25 %, 12 %, 7 %, jugement de l'auteur (pas de consensus fiable). EBITDA de 67 % d'après la marge opérationnelle du T3 FY27 (≈ 67 %)."
+  },
+  "m5": {
+   "source": "Panel de pairs SEC (marges d'EBITDA FY2023-24 : Broadcom 54,6 %, Texas Instruments 48,6 %)",
+   "date": "2024-01-31",
+   "conf": "Moyenne",
+   "note": "56 % retenu en année 5 : niveau des meilleurs pairs établis ; reste un choix. Les données du panel s'arrêtent à FY2023-24 : source ancienne."
+  },
+  "mlt": {
+   "source": "Panel de pairs SEC (marges d'EBITDA FY2023-24)",
+   "date": "2024-01-31",
+   "conf": "Moyenne",
+   "note": "50 % en année 10 : zone Broadcom / Texas Instruments / Microchip. Données du panel de FY2023-24 : source ancienne."
+  },
+  "mult10": {
+   "source": "Jugement de l'auteur",
+   "conf": "Basse",
+   "note": "14x en année 10 : décote de maturité ; à étayer."
+  },
+  "cours": {
+   "source": "Clôture Nasdaq du 20/11/2026 (125,53 $), page cotation NVIDIA Investor Relations ; baisse de 14,0 % le jour de la publication d'une enquête de la SEC",
+   "date": "2026-11-20",
+   "conf": "Haute",
+   "note": "Dernier cours de clôture disponible à la date d'analyse (23/11/2026) ; le marché a ouvert le 23/11 : vérifier avant usage."
+  },
+  "actions": {
+   "source": "8-K T3 FY27 (17/11/2026) : actions diluées du trimestre 24 186 M",
+   "date": "2026-11-17",
+   "conf": "Haute",
+   "note": "Moyenne diluée du trimestre, avant rachats postérieurs."
+  },
+  "nonop": {
+   "source": "8-K T3 FY27 (17/11/2026), bilan au 25/10/2026 : titres non cotés 65 528 M$ + trésorerie nette générée depuis la clôture (97 731 − 32 371 − 54 088 = 11 272 M$, par rapport à la dette nette du bilan FY26)",
+   "date": "2026-10-25",
+   "conf": "Haute",
+   "note": "Dette nette ramenée à la date du bilan de 9 mois ; la part écoulée du FCFF FY27 (75 %) est retirée du DCF. Les titres cotés en actions (44 219 M$) sont déjà dans la trésorerie et titres."
+  },
+  "wd": {
+   "source": "Jugement de l'auteur",
+   "conf": "Moyenne",
+   "note": "Dette brute faible par rapport à la capitalisation boursière."
+  }
+ },
+ "marche": {
+  "date_ref": "2026-11-23",
+  "cours_date": "2026-11-20",
+  "cours_source": "Clôture Nasdaq 20/11/2026, NVIDIA Investor Relations (cotation différée) ; recoupé Investing.com",
+  "consensus": {
+   "ca": [
+    411000,
+    692000
+   ],
+   "ebitda": [
+    null,
+    null
+   ]
+  },
+  "consensus_tp": 229.33,
+  "consensus_n": 44,
+  "consensus_source": "TipRanks, 44 analystes, au 18/11/2026 (relayé par KuCoin) ; autres agrégateurs : Benzinga 247,35 $ (34 analystes), MarketBeat 263,66 $ (61). Forte dispersion ; cibles en cours de révision après la démission du PDG.",
+  "bpa_consensus": 15.73,
+  "bpa_source": "Consensus LSEG relayé par CNBC (17/11/2026) : BPA FY27 de 15,73 $ contre 9,28 $",
+  "decote": 0.1,
+  "decote_source": "Jugement de l'auteur, non calibré : enquête de la SEC sur la comptabilité (Reuters, 20/11/2026, non confirmée), assignation du procureur général de Californie (19/11), recours collectif déposé, démission du PDG. Aucun montant de sanction n'est connu."
+ },
+ "qualitatif": {
+  "porter": [
+   {
+    "note": 4,
+    "commentaire": "AMD, puces maison des grands clients (hyperscalers), nouveaux acteurs de l'accélération IA.",
+    "source": "Jugement de l'auteur"
+   },
+   {
+    "note": 2,
+    "commentaire": "Barrières élevées : R&D, écosystème logiciel, capacité de fabrication.",
+    "source": "Jugement de l'auteur"
+   },
+   {
+    "note": 4,
+    "commentaire": "Dépendance à un fondeur et à la mémoire haute bande passante.",
+    "source": "Jugement de l'auteur"
+   },
+   {
+    "note": 4,
+    "commentaire": "Clients concentrés (grands fournisseurs de cloud).",
+    "source": "Jugement de l'auteur"
+   },
+   {
+    "note": 3,
+    "commentaire": "Architectures alternatives et accélérateurs spécialisés.",
+    "source": "Jugement de l'auteur"
+   }
+  ],
+  "risques": [
+   {
+    "risque": "Gouvernance : démission du PDG (12/11/2026), succession non fixée",
+    "categorie": "Gouvernance",
+    "proba": 4,
+    "impact": 4,
+    "note": "Colette Kress est PDG par intérim ; Moody's a révisé la perspective de positive à stable le 18/11 en citant l'absence de plan de succession.",
+    "source": "Presse financière du 12 au 19/11/2026 (Gotrade, CNBC, Moody's via Gotrade) ; appréciation de l'auteur"
+   },
+   {
+    "risque": "Restrictions américaines à l'export vers la Chine",
+    "categorie": "Réglementaire",
+    "proba": 4,
+    "impact": 4,
+    "note": "Perte de marché accessible ; les perspectives de la direction excluent la Chine selon la presse (à vérifier dans la transcription).",
+    "source": "Appréciation de l'auteur d'après le 10-K et la presse ; à citer précisément"
+   },
+   {
+    "risque": "Concentration des clients",
+    "categorie": "Commercial",
+    "proba": 3,
+    "impact": 4,
+    "note": "Quelques grands fournisseurs de cloud pèsent une part importante du chiffre d'affaires.",
+    "source": "Appréciation de l'auteur d'après le 10-K ; à citer précisément"
+   },
+   {
+    "risque": "Engagements d'approvisionnement et dépendance aux fondeurs/mémoire",
+    "categorie": "Opérations",
+    "proba": 3,
+    "impact": 5,
+    "note": "Engagements d'achat d'environ 390 Md$ (contre 119 Md$ deux trimestres plus tôt) selon un article de presse ; à vérifier dans le 10-Q.",
+    "source": "economy.com.pk, 11/2026 (non vérifié dans le 10-Q) ; appréciation de l'auteur"
+   },
+   {
+    "risque": "Ralentissement des investissements en IA / valorisation du secteur",
+    "categorie": "Marché",
+    "proba": 3,
+    "impact": 5,
+    "note": "Le SOX a perdu 12,25 % le 05/11/2026 ; le secteur est en forte baisse.",
+    "source": "24/7 Wall St., 06/11/2026"
+   },
+   {
+    "risque": "Concurrence des puces maison et d'AMD",
+    "categorie": "Concurrence",
+    "proba": 4,
+    "impact": 3,
+    "note": "Pression sur les parts de marché et les marges.",
+    "source": "Appréciation de l'auteur"
+   }
+  ],
+  "catalyseurs": [
+   {
+    "evenement": "Nomination du nouveau PDG",
+    "date": null,
+    "sens": "Mixte",
+    "impact": "Lève l'incertitude de gouvernance ; calendrier non annoncé",
+    "source": "Presse financière du 12 au 19/11/2026 (Gotrade, CNBC, Moody's via Gotrade) ; appréciation de l'auteur"
+   },
+   {
+    "evenement": "Résultats du T4 FY27 (guidance 130 Md$)",
+    "date": "2027-02-25",
+    "sens": "Positif",
+    "impact": "Confirmation de la trajectoire +90 % ; date estimée selon le calendrier habituel",
+    "source": "CNBC, 17/11/2026 ; date de l'auteur"
+   },
+   {
+    "evenement": "Montée en puissance de Vera Rubin",
+    "date": null,
+    "sens": "Positif",
+    "impact": "Prochain cycle de produits ; calendrier à confirmer",
+    "source": "Presse, 11/2026"
+   }
+  ]
+ },
+ "transactions": [
+  {
+   "nom": "Marvell / Lumentum (pending)",
+   "date": "2026-11-02",
+   "ev": 115000,
+   "ca": 3743,
+   "ebitda": 1476.2,
+   "prime": 0.239,
+   "retenir": 1,
+   "source": "Communiqué Marvell 02/11/2026 (VE 115 Md$, prime 23,9 % vs cours du 28/10). LTM au 26/09/2026 = FY26 + T1 FY27 − T1 FY26 (communiqués Lumentum) : CA 3 014,0 + 1 262,6 − 533,8 ; EBITDA ajusté (SBC réintégré) 1 025,8 + 578,0 − 127,6. Transaction en actions, finalisation prévue 1S 2028 ; multiple de type forte croissance."
+  },
+  {
+   "nom": "Avago / Broadcom Corp.",
+   "date": "2015-05-28",
+   "ev": 32700,
+   "ca": 8430,
+   "ebitda": null,
+   "prime": 0.28,
+   "retenir": 1,
+   "source": "VE : Centerview (annexe 425 Qorvo/Skyworks). CA 2014 : AP. Prime : Reuters (≈ 28 % sur 28,85 Md$). VE/EBITDA historique de 39,1x selon 451 Research (agrégateur) non retenu faute de recoupement. EBITDA non retenu : seul un multiple d'agrégateur (39,1x, 451 Research) est disponible."
+  },
+  {
+   "nom": "Microchip / Microsemi",
+   "date": "2018-03-01",
+   "ev": 10150,
+   "ca": 1811.8,
+   "ebitda": 578.2,
+   "prime": null,
+   "retenir": 1,
+   "source": "Communiqué du 01/03/2018 (VE ≈ 10,15 Md$). Exercice 2017 clos le 01/10/2017 (communiqué Microsemi) : CA 1 811,8 ; l'EBITDA retenu est le résultat d'exploitation non-GAAP 578,2 (hors SBC et amortissements d'actifs incorporels) car la dépréciation n'est pas publiée : EBITDA légèrement sous-estimé, multiple légèrement surestimé. Pas un LTM à la date d'annonce."
+  },
+  {
+   "nom": "Analog Devices / Hittite",
+   "date": "2014-06-09",
+   "ev": 2000,
+   "ca": 273.8,
+   "ebitda": null,
+   "prime": null,
+   "retenir": 1,
+   "source": "8-K ADI du 09/06/2014 (VE ≈ 2,0 Md$). CA 2013 : 10-K Hittite. EBITDA non retenu : résultat d'exploitation 2013 de 107,6 M$ mais D&A non trouvée."
+  },
+  {
+   "nom": "ON Semiconductor / Fairchild",
+   "date": "2015-11-18",
+   "ev": 2400,
+   "ca": 1433.4,
+   "ebitda": 158.8,
+   "prime": null,
+   "retenir": 1,
+   "source": "Communiqué ON du 18/11/2015 (≈ 2,4 Md$ en numéraire). Exercice 2014 (communiqué Fairchild 22/01/2015) : CA 1 433,4 ; EBITDA GAAP = résultat d'exploitation 19,1 + D&A 139,7 = 158,8 (marge faible, non retraité) : multiple élevé par la faiblesse du résultat."
+  }
+ ],
+ "ltm": {
+  "date": "2026-10-25",
+  "ebitda": 243280,
+  "rn": 198923,
+  "source": "8-K T3 FY27 (17/11/2026). EBITDA LTM = EBITDA FY26 133 230 + (résultat d'exploitation 194 791 + D&A 3 378 sur 9 mois FY27) − (86 088 + 2 031 sur 9 mois FY26). Résultat net LTM normalisé = EBIT LTM (239 090) × (1 − 16 8 % taux effectif 9 mois) : le résultat net publié (≈ 226 257 M$ en LTM) inclut des gains sur titres de participation  non récurrents. Calculs de l'auteur."
+ }
+}

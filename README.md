@@ -1,62 +1,61 @@
-# finance-toolkit — analyse financière et valorisation automatisées
+# finance-toolkit — automated financial analysis and valuation
 
-![licence MIT](https://img.shields.io/badge/licence-MIT-blue) ![Excel](https://img.shields.io/badge/Excel-formules%20natives-green)
+![MIT licence](https://img.shields.io/badge/licence-MIT-blue) ![Excel](https://img.shields.io/badge/Excel-native%20formulas-green)
 
-> **Avertissement.** Outil d'analyse et de formation. Les hypothèses de valorisation des exemples sont **illustratives**, les données de pairs viennent de sources gratuites et parfois datées, et les « appréciations » de la note de marché sont des règles mécaniques. Rien ici ne constitue un conseil en investissement ni une recommandation.
+> **Disclaimer.** Educational analysis tool. The valuation assumptions in the examples are **illustrative**, peer data comes from free and sometimes dated sources, and the "assessment" in the market note is a mechanical rule. Nothing here is investment advice or a recommendation.
 
-Collez un bilan et un compte de résultat sur 3 exercices dans un classeur Excel : SIG, CAF, BFR, flux, ratios, scores (Altman, Piotroski), DuPont, variations N/N-1, **DCF à 3 scénarios**, **comparables / football field**, **bêtas de pairs**, **LBO**, **accrétion-dilution**, **DCF à 10 ans avec convergence**, **DCF inversé** (rendement implicite au cours), **transactions comparables** et une **note de marché** (cours cible, risque/rendement, crédit synthétique, niveau de conviction) se calculent seuls ; un **registre des sources**, des **données de marché datées avec consensus** et une **analyse qualitative** (concurrence, risques, catalyseurs) documentent les hypothèses. Un script génère ensuite un rapport PDF.
+Paste a balance sheet and an income statement (3 years) into an Excel workbook and everything else computes with live formulas and no macros: operating balances, cash flow capacity, working capital, ratios, scores (Altman, Piotroski), DuPont, year-on-year variations, a **3-scenario DCF**, **trading comps / football field**, **peer betas**, **LBO**, **accretion/dilution**, a **10-year DCF with fade**, a **reverse DCF** (return implied by the share price), **precedent transactions** and a **market note** (target price, risk/reward, synthetic credit rating, conviction level). A **sources register**, **dated market data with consensus** and a **qualitative analysis** (competition, risks, catalysts) document the assumptions. A script then builds a PDF report.
 
-*(English summary: [README.en.md](README.en.md))*
+*(Version française : [README.fr.md](README.fr.md))*
 
-## Aperçu
-| Rapport PDF (page de garde) | Méthodes croisées (football field) | Note de marché |
+## Preview
+| PDF report (cover) | Cross-checked methods (football field) | Market note |
 |---|---|---|
 | ![](docs/img/rapport_nvidia_p-01.png) | ![](docs/img/rapport_nvidia-09.png) | ![](docs/img/rapport_nvidia-10.png) |
 
-*Exemple NVIDIA, hypothèses illustratives.*
+*NVIDIA example, illustrative assumptions.*
 
-## Démarrage rapide
+## Quick start
 ```bash
 pip install -r requirements.txt
-python src/build_workbook.py --blank --out Modele.xlsx                 # classeur vierge
-python src/build_workbook.py --data data/examples/wavestone_public.json --out Wavestone.xlsx   # exemple réel
-python src/build_workbook.py --data data/examples/lvmh_public.json --out LVMH.xlsx             # grand groupe
-python src/build_workbook.py --data data/examples/nvidia_public.json --out NVIDIA.xlsx         # US GAAP, hypercroissance
-python src/analyse.py Wavestone.xlsx Rapport.pdf                       # rapport PDF
-python -m pytest -q                                                    # tests
+python src/build_workbook.py --blank --out Template.xlsx                                        # blank workbook
+python src/build_workbook.py --data data/examples/wavestone_public.json --out Wavestone.xlsx    # real example
+python src/build_workbook.py --data data/examples/lvmh_public.json --out LVMH.xlsx              # large group
+python src/build_workbook.py --data data/examples/nvidia_public.json --out NVIDIA.xlsx          # US GAAP, hypergrowth
+python src/analyse.py Wavestone.xlsx Report.pdf                                                 # PDF report
+python -m pytest -q                                                                             # tests
 ```
-Importer une balance ou un FEC : `python src/import_balance.py --template Modele.xlsx --out Dossier.xlsx --files bal_N-2.csv bal_N-1.csv bal_N.csv` (mapping PCG éditable : `data/pcg_mapping.csv`).
+Import a trial balance or a French FEC file: `python src/import_balance.py --template Template.xlsx --out Case.xlsx --files tb_N-2.csv tb_N-1.csv tb_N.csv` (editable French chart-of-accounts mapping: `data/pcg_mapping.csv`).
 
-Dans Excel : remplir **Saisie** (cellules jaunes), régler **Hypotheses**, vérifier que tous les contrôles de **Synthese** sont « OK ».
+In Excel: fill in the **Saisie** sheet (yellow cells), set **Hypotheses**, and check that every control in **Synthese** reads "OK".
 
-## Contenu
-| Dossier | Rôle |
+## Contents
+| Folder | Purpose |
 |---|---|
-| `src/` | générateur du classeur, rapport PDF, import balance/FEC |
-| `data/examples/` | société fictive, **Wavestone**, **LVMH** et **NVIDIA** (données publiques), classeurs et rapports PDF générés |
-| `data/samples/` | balances synthétiques (aucune donnée réelle) |
-| `data/peers/` | panel de pairs semi-conducteurs (fondamentaux FY2023-24, source SEC) et sa note de source |
-| `tools/` | générateur de balances synthétiques, construction du panel de pairs (`requirements-peers.txt`) |
-| `tests/` | 79 tests : zéro erreur de formule, cohérence comptable, valorisation, aller-retour d'import, validation sur chiffres publiés |
-| `docs/` | `METHODOLOGIE.md`, `VALIDATION.md` (écarts et défauts trouvés) |
+| `src/` | workbook generator, PDF report, trial balance / FEC import |
+| `data/examples/` | fictitious company, **Wavestone**, **LVMH** and **NVIDIA** (public data), generated workbooks and PDF reports |
+| `data/samples/` | synthetic trial balances (no real data) |
+| `data/peers/` | semiconductor peer panel (FY2023-24 fundamentals, SEC source) and its source note |
+| `tools/` | synthetic trial balance generator, peer panel builder (`requirements-peers.txt`) |
+| `tests/` | 79 tests: zero formula errors, accounting consistency, valuation, import round-trip, validation against published figures |
+| `docs/` | `METHODOLOGIE.md`, `VALIDATION.md` (gaps and defects found) |
 
-## Validation et limites
-Le modèle reproduit les chiffres publiés de Wavestone (`docs/VALIDATION.md`), de LVMH (`docs/VALIDATION_LVMH.md`) et de NVIDIA, sous US GAAP (`docs/VALIDATION_NVIDIA.md`) : ventes, résultat opérationnel, résultat net, total bilan, EBITDA, trésorerie nette. Ces notes détaillent aussi les **écarts de définition** et ce que la validation ne prouve pas. Les hypothèses de valorisation fournies sont illustratives ; les données de pairs viennent d'agrégateurs gratuits et sont à recouper. **Outil d'analyse et de formation : ne constitue pas un conseil en investissement.**
+## Validation and limits
+The model reproduces the published figures of Wavestone (`docs/VALIDATION.md`), LVMH (`docs/VALIDATION_LVMH.md`) and NVIDIA under US GAAP (`docs/VALIDATION_NVIDIA.md`): sales, operating income, net income, balance sheet total, EBITDA, net cash. These notes also detail the **definitional gaps** and what the validation does not prove. The valuation assumptions provided are illustrative; peer data comes from free aggregators and must be cross-checked. **Educational analysis tool: not investment advice.** Note that the documents in `docs/` are written in French.
 
-## Onglets du classeur
-Saisie · Hypotheses · Synthese · **Reco_Marche** · SIG_CAF · Bilan_BFR · Cashflow · Ratios · Scores · Variations · DCF · Comparables · WACC_Pairs · LBO · MA · **DCF_10ans** · **Transactions** · **Sources** · **Marche** · **Qualitatif** · Seuils. Détail des méthodes : `docs/METHODOLOGIE.md`.
+## Workbook sheets
+Saisie · Hypotheses · Synthese · **Reco_Marche** · SIG_CAF · Bilan_BFR · Cashflow · Ratios · Scores · Variations · DCF · Comparables · WACC_Pairs · LBO · MA · **DCF_10ans** · **Transactions** · **Sources** · **Marche** · **Qualitatif** · Seuils. Method details: `docs/METHODOLOGIE.md`. Sheet names are in French.
 
-## Données et sources
-Chiffres des sociétés : communiqués et documents d'enregistrement publics (voir chaque note `docs/VALIDATION_*.md`). Panel de pairs : états SEC extraits d'un jeu Hugging Face sous licence GPL ; seuls des ratios calculés sont versionnés (`data/peers/README.md`). Les cours et capitalisations des exemples proviennent d'agrégateurs gratuits, datés dans les notes : à remplacer par une source professionnelle pour tout usage sérieux.
+## Data and sources
+Company figures: public press releases and registration documents (see each `docs/VALIDATION_*.md` note). Peer panel: SEC statements extracted from a GPL-licensed Hugging Face dataset; only computed ratios are versioned (`data/peers/README.md`). Share prices and market capitalisations in the examples come from free aggregators and are dated in the notes: replace them with a professional source for any serious use.
 
-## Contribuer
-Issues et pull requests bienvenues : ajoutez un test (`tests/`) avec chaque changement de calcul et gardez le zéro erreur de formule (`python -m pytest -q`).
+## Date of the NVIDIA example data
+The NVIDIA example is frozen at 23 November 2026: closing price of 20 November 2026 ($125.53), Q3 FY2027 results (press release of 17 November 2026), analyst consensus of 18 November 2026. Peer multiples date from 28 October and 11 November 2026 and come from free aggregators; the workbook bounds the effect of this gap in the `Pont_Consensus` sheet. The 10% legal discount applied to the target is the author's judgment, not statistically calibrated. These figures age quickly: update them before any use.
 
-## Confidentialité
-Ne versionnez jamais de données réelles de clients ou d'employeur (balances, FEC) : `data/private/` est ignoré par Git.
+## Contributing
+Issues and pull requests are welcome: add a test (`tests/`) with every calculation change and keep zero formula errors (`python -m pytest -q`).
 
-Licence MIT.
+## Confidentiality
+Never commit real client or employer data (trial balances, FEC files): `data/private/` is ignored by Git.
 
-## Date des données de l'exemple NVIDIA
-
-L'exemple NVIDIA est arrêté au 23/11/2026 : cours de clôture du 20/11/2026 (125,53 $), résultats du troisième trimestre de l'exercice 2027 (communiqué du 17/11/2026), consensus des analystes du 18/11/2026. Les multiples des pairs datent du 28/10 et du 11/11/2026 et viennent d'agrégateurs gratuits ; le classeur borne l'effet de ce décalage dans l'onglet `Pont_Consensus`. La décote juridique de 10 % appliquée à la cible est un jugement de l'auteur, non calibré. Ces chiffres vieillissent vite : mettez-les à jour avant tout usage.
+MIT licence.
